@@ -1,0 +1,28 @@
+{
+  "plugins": [
+    "transform-decorators-legacy",
+    "transform-runtime",
+    ["import", { "libraryName": "react-bootstrap", "camel2DashComponentName": false }]
+  ],
+  "presets": [
+    "es2015",
+    "stage-0",
+    "react"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        [
+          "transform-decorators-legacy",
+          "react-transform", {
+            "transforms": [{
+              "transform": "react-transform-hmr",
+              "imports": ["react"],
+              "locals": ["module"]
+            }]
+          }
+        ]
+      ]
+    }
+  }
+}

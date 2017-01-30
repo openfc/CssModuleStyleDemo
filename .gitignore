@@ -1,0 +1,11 @@
+.idea
+node_modules
+dist
+.DS_Store
+yarn.lock
+coverage
+npm-debug*.log
+src/components/*.css
+src/containers/*.css
+/tmp
+/build

@@ -1,0 +1,18 @@
+@value light1, dark1, dark2 from "../../styleguide/colors.css";
+
+.base {
+    color: light1;
+    background-color: dark1;
+}
+
+.caption  {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+
+.caption:hover {
+    background-color: dark2;
+    color: white;
+}

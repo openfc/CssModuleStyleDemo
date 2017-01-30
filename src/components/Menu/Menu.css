@@ -1,0 +1,21 @@
+@value awesome, dark1 from "../../styleguide/colors.css";
+@value sizeLarge from "../../styleguide/fonts.css";
+
+
+.base {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.caption {
+    display: block;
+    padding: 8px 16px;
+    background-color: awesome;
+    composes: title from "../../styleguide/fonts.css";
+}
+
+.freak {
+    border: 3px solid awesome;
+    padding: 20px;
+}

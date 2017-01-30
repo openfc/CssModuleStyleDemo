@@ -1,0 +1,11 @@
+@value moreawesome from "./colors.css";
+
+@value sizeSmall: 10px;
+@value sizeNormal: 14px;
+@value sizeLarge: 20px;
+@value sizeHuge: 50px;
+
+.title {
+	font-size: sizeHuge;
+	color: moreawesome;
+}
