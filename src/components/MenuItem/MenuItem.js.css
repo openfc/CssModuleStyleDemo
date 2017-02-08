@@ -1,0 +1,5 @@
+@value secondary, dark1, dark2 from "../../styleguide/colors.css";
+
+.active {
+    color: secondary;
+}

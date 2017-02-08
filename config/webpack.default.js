@@ -40,6 +40,9 @@ var BUILD_PATH = process.env.__WEBPACK_BUILD_PATH__ || path.join(BASE_PATH, 'bui
 var TEMP_PATH = process.env.__WEBPACK_TEMP_PATH__ || path.join(BASE_PATH, 'tmp');
 
 module.exports =  {
+    node : {
+        'fs': 'empty'
+    },
     context: BASE_PATH, // the same meaning as RequireJS "baseURL"
     entry: {
         main: './src/index.jsx'
@@ -99,7 +102,14 @@ module.exports =  {
             {
                 test: /\.css$/,
                 loader: extractCSS.extract('style','css?camelCase&sourceMap&modules&importLoaders=1&localIdentName=[path][name]--[local]!postcss'),
-				exclude: /node_modules/
+                exclude: [
+                    /node_modules/,
+                    /\.js\.css$/
+                ]
+            },
+            {
+                test: /\.js\.css$/,
+                loader: 'css-js!css?camelCase&sourceMap&modules&import&importLoaders=1&localIdentName=[path][name]--[local]',
             },
             {
                 test: /\.less/,

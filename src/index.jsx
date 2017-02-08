@@ -8,7 +8,7 @@ import MenuItem from 'components/MenuItem';
 const App = () => (
     <Menu>
         <MenuItem caption="Item 1" />
-        <MenuItem caption="Item 2" />
+        <MenuItem caption="Item 2" active />
         <MenuItem caption="Item 3" />
     </Menu>
 );
